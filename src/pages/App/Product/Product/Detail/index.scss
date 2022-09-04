@@ -1,0 +1,135 @@
+@import "/src/styles/mixins";
+
+.product-detail-container {
+  .button-group {
+    display: flex;
+    justify-content: flex-end;
+    .cancel-btn {
+      margin-right: 15px;
+    }
+  }
+
+  .common,
+  .price-inventory {
+    display: flex;
+    margin-bottom: 20px;
+    .left-col {
+      width: 33%;
+      .title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: #5b6673;
+      }
+
+      .description {
+        font-size: 14px;
+        line-height: 20px;
+        color: #5b6673;
+      }
+    }
+
+    .right-col {
+      flex: 1;
+      padding: 25px 20px 10px 20px;
+      background-color: white;
+      border-radius: 8px;
+      display: grid;
+      grid-template-columns: calc((100% - 40px) / 3) calc((100% - 40px) / 3) auto;
+      grid-column-gap: 20px;
+      .number-input {
+        width: 100%;
+      }
+    }
+  }
+
+  .common {
+    .right-col {
+      grid-template-columns: calc(50% - 10px) auto;
+      .description-input {
+        grid-column: 1 / span 2;
+      }
+    }
+  }
+
+  .product-images {
+    display: flex;
+    .left-col {
+      width: 33%;
+      .title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: #5b6673;
+      }
+
+      .description {
+        font-size: 14px;
+        line-height: 20px;
+        color: #5b6673;
+      }
+    }
+
+    .right-col {
+      flex: 1;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      .number-input {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// ===============================Reponesive====================================
+@include tablet_portrait() {
+  .product-detail-container {
+    .common,
+    .price-inventory {
+      .right-col {
+        grid-template-columns: calc(50% - 10px) auto;
+        grid-column-gap: 20px;
+      }
+    }
+  }
+}
+
+@include mobile_portrait() {
+  .product-detail-container {
+    .button-group {
+      button {
+        width: 120px;
+        height: 40px;
+      }
+    }
+
+    .common,
+    .price-inventory {
+      flex-direction: column;
+      .left-col {
+        width: 100%;
+      }
+
+      .right-col {
+        grid-template-columns: auto;
+        grid-column-gap: 20px;
+      }
+    }
+
+    .common {
+      .right-col {
+        .description-input {
+          grid-column: 1 / span 1;
+        }
+      }
+    }
+
+    .product-images {
+      flex-direction: column;
+      .left-col {
+        width: 100%;
+      }
+    }
+  }
+}

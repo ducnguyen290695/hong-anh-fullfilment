@@ -1,0 +1,19 @@
+.tags-list {
+  margin-bottom: 10px;
+  .ant-tag {
+    background: #e7f0ff;
+    height: 30px;
+    border: 1px solid #2246dc;
+    box-sizing: border-box;
+    border-radius: 25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    .ant-tag-close-icon {
+      color: #2246dc;
+    }
+    .label {
+      color: #5b6673;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@import "/src/styles/mixins";
+
+.department-container {
+  font-size: 14px;
+  .departmant-code {
+    white-space: nowrap;
+    font-weight: 600;
+    // width: 130px;
+  }
+
+  .filter-box {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    .search-input {
+      flex: 1;
+      margin-right: 20px;
+    }
+  }
+}
+
+// ===============================Reponesive====================================
+@include tablet_landscape() {
+  .department-container {
+    .filter-box {
+      .search-input {
+        width: 35%;
+      }
+    }
+  }
+}
+
+@include mobile_landscape() {
+  .department-container {
+    .create-btn {
+      margin-top: 15px;
+    }
+  }
+}
+
+@include mobile_portrait() {
+  .department-container {
+    .departmant-code {
+      width: 130px;
+    }
+
+    .filter-box {
+      flex-direction: column;
+      .search-input {
+        width: 100%;
+        margin-bottom: 15px;
+        margin-right: unset;
+      }
+
+      .create-btn {
+        width: calc(100vw - 20px);
+      }
+    }
+  }
+}

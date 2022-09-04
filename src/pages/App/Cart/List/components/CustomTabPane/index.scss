@@ -1,0 +1,440 @@
+@import '/src/styles/mixins';
+
+.ant-tabs-content-holder {
+  .ant-tabs-content {
+    .ant-tabs-tabpane {
+      div {
+        .tools {
+          margin: 0 25px;
+          display: flex;
+          gap: 24px;
+          justify-content: space-between;
+          div {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            p {
+              margin: 0 0 0 8px;
+            }
+          }
+        }
+
+        .info-seller {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 20px;
+          margin-right: 36px;
+          margin-bottom: 25px;
+          .ant-card {
+            width: 500px;
+            .ant-card-body {
+              div {
+                display: flex;
+                justify-content: space-between;
+                .button {
+                  height: 21px;
+                }
+              }
+              .address {
+                font-size: 12px;
+              }
+            }
+          }
+          .ant-form-item {
+            .ant-form-item-control {
+              width: 300px;
+            }
+          }
+        }
+        .info-product {
+          margin-bottom: 25px;
+          .custom-table {
+            .ant-form-item {
+              margin-bottom: 0;
+            }
+          }
+          .add-product-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .total-order {
+            display: flex;
+            background: #e7f0ff;
+            align-items: center;
+            height: 66px;
+            .title {
+              margin-left: 56px;
+            }
+            .quantity {
+              margin-left: 56%;
+            }
+            .price {
+              margin-left: 20.5%;
+              color: #2246dc;
+            }
+          }
+        }
+        .info-order {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 25px;
+          .ant-card {
+            width: 49%;
+            .ant-card-body {
+              display: flex;
+              align-items: center;
+              :nth-child(2) {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-left: 16px;
+                p {
+                  margin: 0;
+                }
+                .address {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+        .description {
+          margin-bottom: 25px;
+
+          .description-content {
+            display: flex;
+            justify-content: space-between;
+          }
+          .ant-card {
+            .ant-card-body {
+              .ant-form-item {
+                width: 49%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 49%;
+                .ant-form-item-control {
+                  width: 100%;
+                }
+                .ant-form-item-label > label::after {
+                  content: none;
+                }
+              }
+            }
+          }
+        }
+        .delivery-methods {
+          margin-bottom: 25px;
+          .ant-radio-group {
+            display: flex;
+            justify-content: space-between;
+          }
+          .form-vertical {
+            .ant-form-item {
+              flex-direction: column;
+              align-items: flex-start;
+              width: 22.5%;
+              label {
+                font-weight: 600;
+              }
+              .ant-form-item-label > label::after {
+                content: none;
+              }
+            }
+          }
+          .form-vertical.info-method {
+            background: #f7f8fb;
+            border: 1px solid #dbe4ee;
+            border-radius: 8px;
+            padding: 20px 20px 20px 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .ant-form-item-control {
+              width: 100%;
+            }
+            .edit-shipping-fee {
+              width: 48.3%;
+              margin-top: 0px;
+              display: flex;
+              flex-direction: column;
+              .ant-form-item {
+                width: 100%;
+                gap: 16px;
+                flex-direction: row;
+                margin: 0;
+                label {
+                  font-weight: 600;
+                }
+                .ant-form-item-label > label::after {
+                  content: none;
+                }
+              }
+              .ant-form-item.switch {
+                // flex-direction: row-reverse;
+                width: 100%;
+              }
+            }
+          }
+          .priority-level {
+            align-items: center;
+            margin: 30px auto 30px 0;
+            width: 30%;
+            display: flex;
+            p {
+              font-weight: 600;
+              margin-right: 36px;
+              margin-bottom: 0px;
+            }
+            .ant-form-item {
+              margin: 0px;
+            }
+          }
+          .form-vertical.delivery-deadline {
+            width: 50%;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            div {
+              font-weight: 600;
+              align-items: center;
+              display: flex;
+              gap: 8px;
+            }
+            .ant-form-item {
+              margin: 0;
+            }
+            .ant-form-item:nth-last-child(1) {
+              width: 42%;
+            }
+          }
+          .switch {
+            margin-top: 70px;
+            .ant-form-item {
+              gap: 16px;
+              label {
+                font-weight: 600;
+              }
+              .ant-form-item-label > label::after {
+                content: none;
+              }
+            }
+          }
+        }
+        .setting-other-payment-methods {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 25px;
+          .setting-other,
+          .payment-methods {
+            width: 49%;
+          }
+          .setting-other {
+            .priority-level {
+              align-items: center;
+              margin: 0px auto 30px 0;
+              width: 100%;
+              display: flex;
+              p {
+                font-weight: 600;
+                margin-right: 36px;
+                margin-bottom: 0px;
+              }
+              .ant-form-item {
+                margin: 0px;
+              }
+            }
+            .form-vertical {
+              .ant-form-item {
+                flex-direction: column;
+                align-items: flex-start;
+                width: 22.5%;
+                label {
+                  font-weight: 600;
+                }
+                .ant-form-item-label > label::after {
+                  content: none;
+                }
+              }
+            }
+            .form-vertical.delivery-deadline {
+              width: 100%;
+              align-items: center;
+              display: flex;
+              justify-content: space-between;
+              div {
+                font-weight: 600;
+                align-items: center;
+                display: flex;
+                gap: 8px;
+              }
+              .ant-form-item {
+                margin: 0;
+              }
+            }
+            .switch {
+              margin-top: 25px;
+              display: flex;
+              width: 100%;
+              align-items: center;
+              gap: 16px;
+              .ant-form-item {
+                margin: 0;
+                label {
+                  font-weight: 600;
+                }
+                .ant-form-item-label > label::after {
+                  content: none;
+                }
+              }
+            }
+          }
+          .payment-methods {
+            .ant-radio-group {
+              display: flex;
+              justify-content: space-between;
+            }
+          }
+          .wallet,
+          .debt-limit {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            .money {
+              font-weight: 600;
+            }
+          }
+          .alert {
+            color: #ef9351;
+          }
+        }
+        .vat-bill {
+          display: flex;
+          justify-content: space-between;
+          .vat,
+          .bill {
+            width: 49%;
+          }
+          .vat {
+            .export-vat {
+              display: flex;
+              justify-content: flex-start;
+              gap: 32px;
+              .ant-form-item {
+                flex-direction: row-reverse;
+                gap: 16px;
+                .ant-form-item-label > label::after {
+                  content: none;
+                }
+              }
+            }
+            .description-vat {
+              display: flex;
+              gap: 5%;
+              flex-wrap: wrap;
+              .ant-form-item {
+                flex-direction: column;
+                width: 47.5%;
+                align-items: flex-start;
+                label {
+                  font-weight: 600;
+                }
+                .ant-form-item-label > label::after {
+                  content: none;
+                }
+                .ant-form-item-control {
+                  width: 100%;
+                }
+              }
+            }
+          }
+          .bill {
+            .ant-card-body {
+              display: flex;
+
+              .title,
+              .price {
+                display: flex;
+                width: 50%;
+                flex-direction: column;
+                justify-content: flex-end;
+                p {
+                  text-align: right;
+                  margin-bottom: 12px;
+                }
+                .price-input {
+                  max-width: 180px;
+                }
+                .form-control {
+                  display: flex;
+                  justify-content: flex-end;
+                  gap: 8px;
+                  .ant-form-item {
+                    margin: 0;
+                  }
+                  .ant-space {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0px !important;
+                  }
+                }
+              }
+              .price {
+                p {
+                  font-weight: 600;
+                  svg {
+                    margin-left: 8px;
+                  }
+                }
+                p.total {
+                  color: #2246dc;
+                }
+                p:nth-child(1),
+                p:nth-child(2),
+                p:nth-last-child(1),
+                p:nth-last-child(2),
+                p:nth-last-child(4) {
+                  margin-right: 24px;
+                }
+              }
+            }
+          }
+        }
+        .create-order {
+          margin-top: 33px;
+          display: flex;
+          justify-content: right;
+          .btn-create-order {
+            background-color: #2246dc;
+            color: #ffffff;
+            font-weight: 600;
+            width: 160px;
+            height: 45px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include laptop() {
+  .ant-tabs-content-holder {
+    .ant-tabs-content {
+      div {
+        .vat-bill {
+          .bill {
+            .ant-card-body {
+              .title {
+                width: 65% !important;
+              }
+              .price {
+                width: 35% !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import '/src/styles/mixins';
+
+.menu-select-range-picker {
+  .ant-picker-panel-container {
+    display: flex;
+  }
+  .ant-picker-panel-container > .ant-space {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8px;
+    gap: 0;
+    .ant-space-item {
+      width: 100%;
+      height: 100%;
+    }
+    .buttons {
+      display: flex;
+      justify-content: flex-end;
+      width: 95%;
+      align-items: center;
+      height: 100%;
+      gap: 5%;
+    }
+  }
+}

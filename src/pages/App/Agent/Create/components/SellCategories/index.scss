@@ -1,0 +1,33 @@
+@import '/src/styles/mixins';
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  .checkbox-title {
+    margin-right: 10px;
+  }
+
+  .seller-level {
+    margin-top: -10px;
+  }
+}
+
+.sell-categories {
+  .sell-categories-content {
+    .ant-tree-list-holder-inner {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected,
+    .ant-tree .ant-tree-node-content-wrapper:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+.seller-level {
+  min-width: 100px;
+}

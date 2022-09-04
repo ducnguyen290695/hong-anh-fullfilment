@@ -1,0 +1,29 @@
+.mask-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($color: #000000, $alpha: 0.3);
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.25s ease;
+  .loading {
+    height: 50px;
+    width: 50px;
+    background-image: url("../../assets/images/loading.gif");
+    background-size: 100% 100%;
+  }
+}
+
+.show-mask {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hide-mask {
+  opacity: 0;
+  visibility: hidden;
+}

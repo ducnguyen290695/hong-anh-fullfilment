@@ -1,0 +1,148 @@
+@import '/src/styles/mixins';
+
+.role-container {
+  font-size: 14px;
+  .account-id {
+    white-space: nowrap;
+    font-weight: 600;
+  }
+
+  .filter-box {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    .search-input {
+      flex: 1;
+      margin-right: 20px;
+    }
+  }
+}
+
+.user-name {
+  span {
+    color: #ff0c5c;
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .coppy-role {
+    margin: 0 20px;
+  }
+
+  .delete-action {
+    color: #d2434d;
+  }
+}
+
+.user-list-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.search-user-input {
+  margin-bottom: 20px;
+}
+
+.user-list {
+  overflow-x: auto;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  min-width: 800px;
+}
+
+.role-code {
+  color: #1953d8;
+  font-weight: bold;
+}
+
+.role-tag {
+  border: 1px solid #cecece;
+  padding: 2px;
+  border-radius: 5px;
+  &:not(:last-child) {
+    margin-right: 3px;
+  }
+}
+
+// ===============================Reponesive====================================
+@include laptop() {
+  .role-container {
+    .filter-box {
+      .search-input {
+        width: 35%;
+      }
+    }
+  }
+}
+
+@include tablet_landscape() {
+  .role-container {
+    .filter-box {
+      .search-input {
+        width: 35%;
+      }
+
+      .create-btn {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@include tablet_portrait() {
+  .role-container {
+    .filter-box {
+      .search-input {
+        width: 35%;
+      }
+
+      .create-btn {
+        margin-top: unset;
+      }
+    }
+  }
+}
+
+@include mobile_landscape() {
+  .role-container {
+    .filter-box {
+      .create-btn {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+@include mobile_portrait() {
+  .role-container {
+    .filter-box {
+      flex-direction: column;
+      .search-input {
+        width: 100%;
+        margin-bottom: 15px;
+        margin-right: unset;
+      }
+
+      .create-btn {
+        width: calc(100vw - 20px);
+        margin-top: unset;
+      }
+    }
+  }
+
+  .user-list {
+    width: calc(100% - 50px);
+  }
+}

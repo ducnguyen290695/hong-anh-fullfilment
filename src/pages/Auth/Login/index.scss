@@ -1,0 +1,73 @@
+@import "/src/styles/mixins";
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  .left-col {
+    width: 50%;
+    background-image: url("../../../assets/images/login-bg.jpg");
+    background-size: 100% 100%;
+  }
+
+  .right-col {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .form {
+      width: 400px;
+      .logo {
+        height: 80px;
+        width: 80px;
+        background-image: url("../../../assets/images/logo.png");
+        background-size: 100% 100%;
+      }
+
+      .greeting {
+        font-size: 16px;
+      }
+
+      .form-tile {
+        font-weight: 600;
+        font-size: 22px;
+      }
+
+      .forgot-password {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+
+      .submit-btn {
+        width: 100%;
+        background-color: #1953d8;
+        height: 44px;
+        border-radius: 7px;
+      }
+    }
+  }
+}
+
+// ===============================Reponesive====================================
+@include tablet_portrait() {
+  .container {
+    .left-col {
+      display: none;
+    }
+
+    .right-col {
+      width: 100%;
+    }
+  }
+}
+
+@include mobile_portrait() {
+  .container {
+    .right-col {
+      .form {
+        width: 90%;
+      }
+    }
+  }
+}

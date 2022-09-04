@@ -1,0 +1,18 @@
+.check-box-group {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .check-box-list {
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+}
+
+.role-list {
+  .role-box {
+    .sub-role-list {
+      margin-left: 20px;
+      margin-top: 5px;
+    }
+  }
+}

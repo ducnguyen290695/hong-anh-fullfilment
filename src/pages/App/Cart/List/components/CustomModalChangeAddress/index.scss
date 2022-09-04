@@ -1,0 +1,42 @@
+.list-info-shipping {
+  max-height: 500px;
+  overflow: auto;
+  .ant-list-item {
+    cursor: pointer;
+    border: none;
+    .item-info-shipping {
+      border: 1px dashed #d8dfea;
+      border-radius: 16px;
+      padding: 16px;
+      width: 100%;
+      .info-user {
+        display: flex;
+        justify-content: space-between;
+        .ant-tag {
+          display: none;
+        }
+      }
+      .address {
+        margin: 0;
+        font-size: 12px;
+      }
+    }
+    .item-info-shipping.active {
+      .info-user {
+        display: flex;
+        justify-content: space-between;
+        .ant-tag {
+          max-height: 22px;
+          display: initial;
+          margin: 0;
+          border: 1px solid #d2434d;
+          border-radius: 25px;
+          background: #feefef;
+        }
+      }
+    }
+    .item-info-shipping.selected {
+      border: 1px solid #2246dc;
+    }
+  }
+}

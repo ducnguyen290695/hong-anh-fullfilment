@@ -1,0 +1,66 @@
+@import '/src/styles/mixins';
+
+.create-role-container {
+  .button-group {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    .cancel-btn {
+      margin-right: 20px;
+    }
+  }
+
+  .role-content {
+    .form {
+      .form-content {
+        display: grid;
+        grid-template-columns: calc((100% - 20px) / 2) auto;
+        grid-column-gap: 20px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+      .description-input {
+        grid-column: 1 / span 2;
+      }
+    }
+
+    .permission-list {
+      display: grid;
+      grid-template-columns: calc(50% - 10px) auto;
+      grid-gap: 20px;
+
+      .permission-box {
+        padding: 20px;
+        background-color: #f7f8fb;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+// ===============================Reponesive====================================
+@include mobile_portrait() {
+  .create-role-container {
+    .role-content {
+      .form {
+        grid-template-columns: auto;
+        grid-column-gap: 10px;
+        .description-input {
+          grid-column: unset;
+        }
+      }
+
+      .permission-list {
+        grid-template-columns: auto;
+        grid-gap: 10px;
+        .permission-box {
+          padding: 20px;
+          background-color: #f7f8fb;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}

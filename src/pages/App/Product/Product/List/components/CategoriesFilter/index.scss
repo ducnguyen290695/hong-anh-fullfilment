@@ -1,0 +1,180 @@
+.categories-container {
+  position: relative;
+  margin-bottom: 20px;
+
+  .left-arrow,
+  .right-arrow {
+    border: 1px solid #e0e0e0;
+    position: absolute;
+    top: calc(50% - 15px);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    &:hover {
+      border: 1px solid #1953d8;
+      color: #1953d8;
+    }
+  }
+
+  .left-arrow {
+    left: -10px;
+  }
+
+  .right-arrow {
+    right: -10px;
+  }
+
+  .list-category {
+    background-color: #e9eef5;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: calc(100% - 50px);
+    margin: 0 auto;
+    display: flex;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+
+    .category-item {
+      max-width: 12ch;
+      text-overflow: ellipsis;
+      overflow-x: hidden;
+    }
+
+    .level1-list {
+      display: flex;
+      flex-wrap: nowrap;
+      transition: all 0.5s ease;
+      align-items: center;
+      .level1-item {
+        background-color: white;
+        cursor: pointer;
+        border-radius: 8px;
+        padding: 10px 14px;
+        margin-right: 5px;
+        border: 1px solid #e0e0e0;
+        white-space: nowrap;
+        &:hover {
+          border: 1px solid #275edb;
+        }
+      }
+
+      .final-actived {
+        border: 1px solid #275edb;
+      }
+
+      .level2-list {
+        display: flex;
+        align-items: center;
+        transition: all 0.5s ease;
+        overflow-x: hidden;
+        .level2-item {
+          background-color: white;
+          white-space: nowrap;
+          cursor: pointer;
+          border-radius: 8px;
+          padding: 8px 10px;
+          margin-right: 5px;
+          border: 1px solid #e0e0e0;
+          &:hover {
+            border: 1px solid #275edb;
+          }
+        }
+
+        .final-actived {
+          border: 1px solid #275edb;
+        }
+
+        .level3-list {
+          display: flex;
+          align-items: center;
+          transition: all 0.5s ease;
+          overflow-x: hidden;
+          .level3-item {
+            background-color: white;
+            white-space: nowrap;
+            cursor: pointer;
+            border-radius: 8px;
+            padding: 6px 9px;
+            margin-right: 5px;
+            border: 1px solid #e0e0e0;
+            &:hover {
+              border: 1px solid #275edb;
+            }
+          }
+
+          .final-actived {
+            border: 1px solid #275edb;
+          }
+
+          .level4-list {
+            display: flex;
+            align-items: center;
+            transition: all 0.5s ease;
+            .level4-item {
+              background-color: white;
+              white-space: nowrap;
+              cursor: pointer;
+              border-radius: 8px;
+              padding: 4px 8px;
+              margin-right: 5px;
+              border: 1px solid #e0e0e0;
+              &:hover {
+                border: 1px solid #275edb;
+              }
+            }
+
+            .final-actived {
+              border: 1px solid #275edb;
+            }
+
+            .level5-list {
+              display: flex;
+              align-items: center;
+              transition: all 0.5s ease;
+              .level5-item {
+                background-color: white;
+                white-space: nowrap;
+                cursor: pointer;
+                border-radius: 8px;
+                padding: 3px 8px;
+                margin-right: 5px;
+                border: 1px solid #e0e0e0;
+                &:hover {
+                  border: 1px solid #275edb;
+                }
+              }
+
+              .final-actived {
+                border: 1px solid #275edb;
+              }
+            }
+          }
+        }
+      }
+
+      .expand-icon {
+        margin-right: 5px;
+      }
+
+      .list-closed {
+        max-width: 0px;
+        visibility: hidden;
+      }
+
+      .list-opened {
+        max-width: 2000px;
+        visibility: visible;
+      }
+    }
+  }
+}

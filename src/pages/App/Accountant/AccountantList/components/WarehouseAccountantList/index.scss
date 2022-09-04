@@ -1,0 +1,74 @@
+@import '/src/styles/mixins';
+
+.actions {
+  svg {
+    cursor: pointer;
+    &:first-child {
+      margin-right: 25px;
+    }
+  }
+}
+
+.recharge-title {
+  font-weight: 600;
+  font-size: 22px;
+  color: #262f3b;
+  p {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .seller-name {
+    font-size: 14px;
+    color: #052987;
+  }
+}
+
+.recharge-form {
+  margin-bottom: 20px;
+  .files-support {
+    font-weight: 400;
+    font-size: 10px;
+    color: #9cadc4;
+    margin-top: 10px;
+  }
+
+  .note {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 14px;
+    color: #e8840e;
+  }
+}
+
+.warehouse-accountant-list {
+  .filter-box {
+    .filter-btn {
+      min-width: 230px;
+      svg {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.transfer-popup {
+  min-width: 900px;
+}
+
+// ===============================Reponesive====================================
+
+@include tablet_portrait() {
+  .transfer-popup {
+    min-width: 80%;
+  }
+}
+
+@include mobile_portrait() {
+  .warehouse-accountant-list {
+    .filter-box {
+      .filter-btn {
+        width: 100%;
+      }
+    }
+  }
+}

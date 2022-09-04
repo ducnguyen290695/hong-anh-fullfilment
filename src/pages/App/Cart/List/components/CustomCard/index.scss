@@ -1,0 +1,17 @@
+.ant-card {
+  .ant-card-head {
+    border-bottom: none;
+    padding-left: 25px;
+    font-size: 16px;
+    .ant-card-head-wrapper {
+      .ant-card-head-title {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 600;
+      }
+    }
+  }
+  .ant-card-body {
+    padding-left: 25px;
+  }
+}

@@ -1,0 +1,84 @@
+@import "/src/styles/mixins";
+
+.upload-image {
+  .images-icon {
+    color: #2246dc;
+    font-size: 40px;
+  }
+  .image-list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns:
+      calc((100% - 60px) / 4) calc((100% - 60px) / 4)
+      calc((100% - 60px) / 4) auto;
+    grid-gap: 20px;
+    .image-box {
+      height: 180px;
+      width: 100%;
+      position: relative;
+      border: 1px solid #f0f0f0;
+      &:hover .img-mask {
+        display: flex;
+      }
+      .img-mask {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        .remove-icon {
+          color: white;
+          font-size: 24px;
+          cursor: pointer;
+          transition: all 0.2s ease;
+          &:hover {
+            color: orangered;
+          }
+        }
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+// ===============================Reponesive====================================
+@include laptop() {
+  .upload-image {
+    .image-list {
+      grid-template-columns:
+        calc((100% - 40px) / 3) calc((100% - 40px) / 3)
+        auto;
+      .image-box {
+        height: 150px;
+      }
+    }
+  }
+}
+
+@include tablet_portrait() {
+  .upload-image {
+    .image-list {
+      grid-template-columns:
+        calc((100% - 20px) / 2)
+        auto;
+    }
+  }
+}
+
+@include mobile_portrait() {
+  .upload-image {
+    .image-list {
+      .image-box {
+        height: 100px;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Be Vietnam Pro;
+}
+
+/* Custom Antd */
+.ant-menu-submenu-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.ant-menu-submenu-selected {
+  color: #1953d8;
+}
+
+.ant-menu-submenu-selected > .ant-menu-item-selected {
+  background-color: white;
+}
+
+.ant-breadcrumb a:hover {
+  color: #063ec2;
+}
+
+/* Font Face */
+@font-face {
+  font-family: Be Vietnam Pro;
+  src: url("./assets/fonts/be_vietnam_pro/ttf/BeVietnamPro-Regular.ttf");
+}

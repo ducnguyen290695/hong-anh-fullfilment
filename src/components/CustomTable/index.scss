@@ -1,0 +1,19 @@
+@import "/src/styles/mixins";
+
+.custom-table {
+  position: relative;
+  .left-footer {
+    position: absolute;
+    left: 0;
+    bottom: 16px;
+  }
+}
+
+// ===============================Reponesive====================================
+@include mobile_portrait() {
+  .custom-table {
+    .left-footer {
+      display: none;
+    }
+  }
+}

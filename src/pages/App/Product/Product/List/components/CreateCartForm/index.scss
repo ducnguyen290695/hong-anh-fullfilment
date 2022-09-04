@@ -1,0 +1,35 @@
+@import '/src/styles/mixins';
+
+.create-cart-btn {
+  width: 230px;
+  .filter-icon {
+    margin-right: 5px;
+  }
+}
+
+.create-cart-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+}
+
+// ===============================Reponesive====================================
+
+@include laptop() {
+  .create-cart-btn {
+    width: 200px;
+  }
+}
+
+@include mobile_landscape() {
+  .create-cart-btn {
+    width: 150px;
+  }
+}
+
+@include mobile_portrait() {
+  .create-cart-btn {
+    width: calc(100vw - 20px);
+  }
+}

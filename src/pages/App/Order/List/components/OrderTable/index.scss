@@ -1,0 +1,78 @@
+@import '/src/styles/mixins';
+
+.order-container {
+  .title-table {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .filter-box {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    .search-input {
+      width: 40%;
+      display: flex;
+      gap: 16px;
+      .custom-input {
+        width: 100%;
+      }
+    }
+    .filter-btn {
+      min-width: 230px;
+
+      svg {
+        margin-right: 10px;
+      }
+    }
+  }
+  .priority-medium,
+  .order-completed {
+    color: #00ab78;
+    margin: 0;
+  }
+  .priority-high,
+  .order-cancel {
+    color: #df3030;
+    margin: 0;
+  }
+  .yellow-remaining-deliver-time {
+    color: #ff7f00;
+  }
+  .red-remaining-deliver-time {
+    color: #df3030;
+  }
+  .green-remaining-deliver-time {
+    color: #00ab78;
+  }
+  .yellow-stock-status {
+    color: #ff7f00;
+  }
+  .red-stock-status {
+    color: #df3030;
+  }
+}
+
+// ===============================Reponesive======================================
+@include laptop() {
+  .order-container {
+    .filter-box {
+      .search-input {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@include tablet_landscape() {
+  .order-container {
+    .filter-box {
+      .search-input {
+        width: 100%;
+      }
+    }
+  }
+}

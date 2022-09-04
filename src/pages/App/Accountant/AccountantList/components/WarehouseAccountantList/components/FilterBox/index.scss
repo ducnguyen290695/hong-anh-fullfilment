@@ -1,0 +1,58 @@
+.menu {
+  border-radius: 8px;
+  .menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #d8dfea;
+    height: 40px;
+    p {
+      margin: 0;
+    }
+    .title {
+      font-weight: 600;
+      font-size: 16px;
+      color: #5b6673;
+    }
+    .setting {
+      font-weight: 600;
+      font-size: 14px;
+      color: #262f3b;
+      cursor: pointer;
+      a {
+        margin-left: 10px;
+      }
+    }
+  }
+  .panel-content {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f8fb;
+
+    .radio-group {
+      display: flex;
+      flex-direction: column;
+    }
+    .group-search-input {
+      margin-bottom: 10px;
+    }
+    .check-box {
+      margin: 0;
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+
+    .check-box-group {
+      display: flex;
+      flex-direction: column;
+    }
+    .see-all-btn {
+      color: #2246dc;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}

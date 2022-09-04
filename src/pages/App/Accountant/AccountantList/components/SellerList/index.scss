@@ -1,0 +1,43 @@
+@import '/src/styles/mixins';
+
+.agent-code {
+  color: #1953D8;
+  font-weight: bold;
+}
+
+.actions {
+  svg {
+    cursor: pointer;
+
+    &:first-child {
+      margin-right: 25px;
+    }
+  }
+}
+
+.wallet-status {
+  color: #D2434D
+}
+
+.seller-list {
+  .filter-box {
+    .filter-btn {
+      min-width: 230px;
+
+      svg {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+// ===============================Reponesive====================================
+@include mobile_portrait() {
+  .seller-list {
+    .filter-box {
+      .filter-btn {
+        width: 100%;
+      }
+    }
+  }
+}

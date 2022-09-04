@@ -1,0 +1,19 @@
+{
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testRegex": "/*.test.js$",
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "src/**/*.{js,jsx}",
+    "!src/**/*.d.ts"
+  ],
+  "coverageReporters": [
+    "lcov"
+  ],
+  "coverageDirectory": "test-coverage",
+  "moduleDirectories": [
+    "node_modules",
+    "src"
+  ]
+}

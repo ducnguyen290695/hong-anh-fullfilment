@@ -1,0 +1,38 @@
+.ant-radio-group {
+  width: 100%;
+  .radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .other-reason {
+    display: inline-flex;
+    margin-bottom: 20px;
+    span {
+      margin-top: 10px;
+    }
+    .input-other {
+      width: 350px;
+    }
+    .validate-message {
+      color: #ff4d4f;
+    }
+    .hidden {
+      visibility: hidden;
+    }
+  }
+}
+
+.warning-message {
+  color: #ff7f00;
+  margin: 0 0 20px 20px;
+}
+
+.cancel-order-title {
+  text-transform: uppercase;
+  font-family: Be Vietnam Pro;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+}

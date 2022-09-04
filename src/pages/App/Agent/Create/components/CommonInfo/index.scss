@@ -1,0 +1,125 @@
+@import '/src/styles/mixins';
+
+.common-info-container {
+  .seller-class {
+    display: flex;
+    .seller-class-label {
+      margin-top: 7px;
+      margin-right: 20px;
+      font-weight: bold;
+    }
+  }
+
+  .form-content {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    .title {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: #5b6673;
+      border-bottom: 1px solid #d9d9d9;
+      padding: 20px;
+      margin-bottom: 0;
+    }
+
+    .logo {
+      grid-row: 1 / span 2;
+      padding-top: 10px;
+      .logo-content {
+        display: flex;
+        .avatar {
+          width: 100px;
+          height: 100px;
+          margin-right: 20px;
+          border-radius: 50%;
+          border: 1px solid #ebebeb;
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+        }
+
+        .avatar-placeholder {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          margin-right: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          background-color: #e7f0ff;
+          color: #9cadc3;
+        }
+
+        .upload {
+          flex: 1;
+          .upload-btn {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+
+    .form {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: calc((100% - 40px) / 3) calc((100% - 40px) / 3) auto;
+      grid-column-gap: 20px;
+      .address {
+        height: 125px;
+        white-space: nowrap;
+        .default-check {
+          display: flex;
+          justify-content: space-between;
+          margin-top: -20px;
+          p {
+            font-weight: bold;
+            margin-top: 7px;
+            color: #2246dc;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ===============================Reponesive====================================
+@include mobile_landscape() {
+  .common-info-container {
+    .form-content {
+      .logo {
+        .logo-content {
+          .avatar {
+            width: 80px;
+            height: 80px;
+          }
+
+          .avatar-placeholder {
+            width: 80px;
+            height: 80px;
+          }
+        }
+      }
+
+      .form {
+        grid-template-columns: 50% auto;
+      }
+    }
+  }
+}
+
+@include mobile_landscape() {
+  .common-info-container {
+    .form-content {
+      .form {
+        grid-template-columns: auto;
+      }
+    }
+  }
+}

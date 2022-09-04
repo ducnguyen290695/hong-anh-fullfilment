@@ -1,0 +1,14 @@
+[build]
+base    = "."
+publish = "build"
+command = "CI= yarn run build"
+
+[context.production.environment]
+REACT_APP_ENV = "production"
+BASE_URL = "https://honganh.dungdm93.me"
+BASE_GRAPHQL_URL = "https://gw.devapi.honganh.vn/graphql"
+
+[context.branch-deploy.environment]
+REACT_APP_ENV = "development"
+BASE_URL = "https://honganh.dungdm93.me"
+BASE_GRAPHQL_URL = "https://gw.devapi.honganh.vn/graphql"

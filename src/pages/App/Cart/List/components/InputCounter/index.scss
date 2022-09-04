@@ -1,0 +1,43 @@
+.input-counter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 150px;
+  .input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d8dfea;
+    border-radius: 8px;
+    padding: 0 5px;
+    text-align: center;
+    .minus-btn,
+    .plus-btn {
+      border: none;
+      .ant-btn-text:hover,
+      .ant-btn-text:focus {
+        background: none;
+      }
+    }
+    .ant-input-number {
+      border: none;
+      .ant-input-number-input-wrap {
+        input {
+          text-align: center;
+        }
+      }
+    }
+    .ant-input-number:focus,
+    .ant-input-number-focused {
+      box-shadow: none;
+    }
+  }
+  .input.alert {
+    border-color: #ef9351;
+  }
+  p.alert {
+    color: #ef9351;
+    margin: 0;
+  }
+}

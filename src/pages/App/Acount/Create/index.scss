@@ -1,0 +1,77 @@
+@import '/src/styles/mixins';
+
+.create-account-container {
+  .button-group {
+    display: flex;
+    justify-content: flex-end;
+    .cancel-btn {
+      margin-right: 15px;
+    }
+  }
+
+  .form-content {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 20% auto;
+    padding: 20px;
+    border-radius: 8px;
+    .avatar-upload {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 20px;
+
+      .title {
+        font-weight: 600;
+      }
+
+      .avatar {
+        height: 100px;
+        width: 100px;
+        img {
+          height: 100%;
+          width: 100%;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+
+      .upload {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        button {
+          margin: 16px 0;
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+
+    .common-info {
+      display: grid;
+      grid-template-columns: calc((100% - 20px) / 2) auto;
+      grid-column-gap: 20px;
+    }
+  }
+}
+
+// ===============================Reponesive====================================
+@include tablet_portrait() {
+  .create-account-container {
+    .button-group {
+      button {
+        width: 120px;
+        height: 40px;
+      }
+    }
+
+    .form-content {
+      grid-template-columns: auto;
+      .common-info {
+        grid-template-columns: auto;
+      }
+    }
+  }
+}

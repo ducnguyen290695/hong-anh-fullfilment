@@ -1,0 +1,41 @@
+.order-status {
+  border: 1px solid #dbe4ee;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: white;
+  overflow-x: auto;
+  .status-title {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .order-node {
+    p {
+      margin-bottom: 0;
+      &:nth-child(2),
+      &:nth-child(3) {
+        color: #a4a4a4;
+      }
+    }
+  }
+
+  .progress-dot {
+    height: 10px;
+    width: 10px;
+    border: 1px solid #a4a4a4;
+    border-radius: 50%;
+  }
+
+  .current-dot {
+    background-color: #1853d8;
+    border: unset;
+  }
+
+  .past-dot {
+    background-color: #a4a4a4;
+  }
+
+  .future-dot {
+    background-color: white;
+  }
+}

@@ -1,0 +1,27 @@
+@import '/src/styles/mixins';
+
+.button-group-of-3 {
+  width: 30%;
+  display: flex;
+  gap: 25px;
+  justify-content: right;
+  .ant-btn {
+    border: 1px solid #2246dc;
+    color: #2246dc;
+    font-weight: 600;
+    width: 33.33%;
+  }
+  .btn-main-action {
+    background-color: #2246dc;
+    color: #ffffff;
+    font-weight: 600;
+  }
+}
+
+// ===============================Reponesive======================================
+@include tablet_landscape() {
+  .button-group-of-3 {
+    margin-top: 20px;
+    width: 100%;
+  }
+}

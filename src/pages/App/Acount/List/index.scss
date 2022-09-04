@@ -1,0 +1,131 @@
+@import "/src/styles/mixins";
+
+.account-container {
+  font-size: 14px;
+  .account-id {
+    white-space: nowrap;
+    font-weight: 600;
+  }
+
+  .status-on {
+    color: #00ab78;
+  }
+
+  .status-off {
+    color: #5b6673;
+  }
+
+  .filter-box {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    .search-input {
+      width: 50%;
+    }
+
+    .status-filter,
+    .department-filter {
+      white-space: nowrap;
+      .filter {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+.user-name {
+  span {
+    color: #ff0c5c;
+  }
+}
+
+// ===============================Reponesive====================================
+@include laptop() {
+  .account-container {
+    .filter-box {
+      .search-input {
+        width: 35%;
+      }
+    }
+  }
+}
+
+@include tablet_landscape() {
+  .account-container {
+    .filter-box {
+      .search-input {
+        width: 35%;
+      }
+
+      .create-btn,
+      .department-filter {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@include tablet_portrait() {
+  .account-container {
+    .filter-box {
+      .search-input {
+        width: 35%;
+      }
+
+      .status-filter,
+      .department-filter {
+        .filter-label {
+          display: none;
+        }
+      }
+
+      .create-btn,
+      .department-filter {
+        margin-top: unset;
+      }
+    }
+  }
+}
+
+@include mobile_landscape() {
+  .account-container {
+    .filter-box {
+      .create-btn {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+@include mobile_portrait() {
+  .account-container {
+    .filter-box {
+      flex-direction: column;
+      .search-input {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      .status-filter,
+      .department-filter {
+        white-space: nowrap;
+        .filter-label {
+          display: none;
+        }
+
+        .filter {
+          margin-left: 0px;
+          width: calc(100vw - 20px);
+          margin-bottom: 15px;
+        }
+      }
+
+      .create-btn {
+        width: calc(100vw - 20px);
+        margin-top: unset;
+      }
+    }
+  }
+}

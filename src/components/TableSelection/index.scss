@@ -1,0 +1,34 @@
+.table-selection {
+  .group-btn {
+    display: flex;
+    align-items: center;
+    svg {
+      font-size: 18px;
+    }
+    .select-all-btn {
+      margin-right: 15px;
+      cursor: pointer;
+      &:hover {
+        color: #1953d8;
+      }
+    }
+
+    .select-all-btn-active {
+      color: #1953d8;
+    }
+  }
+  .selected-info {
+    background-color: white;
+    text-align: center;
+    padding: 10px 0;
+    border: 1px dashed #d8dfea;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #262f3b;
+    span {
+      color: #ff0c5c;
+      cursor: pointer;
+    }
+  }
+}

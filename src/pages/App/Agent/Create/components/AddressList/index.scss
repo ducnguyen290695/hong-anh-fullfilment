@@ -1,0 +1,157 @@
+@import '/src/styles/mixins';
+
+.address-list-container {
+  .agent-code {
+    font-weight: bold;
+  }
+
+  .warehouse-select {
+    min-width: 120px;
+  }
+
+  .filter-box {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    .search-input {
+      flex: 1;
+      margin-right: 20px;
+    }
+  }
+}
+
+.dropdown-overlay {
+  width: 400px;
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  a {
+    margin-left: 15px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .delete-action {
+    color: #d2434d;
+  }
+}
+
+.add-address-form {
+  display: grid;
+  grid-template-columns: calc((100% - 40px) / 3) calc((100% - 40px) / 3) auto;
+  grid-column-gap: 20px;
+  width: 1000px;
+
+  .address-input {
+    grid-column: 1 / span 3;
+  }
+}
+
+.add-address-title {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+// ===============================Reponesive====================================
+@include laptop() {
+  .address-list-container {
+    .filter-box {
+      .search-input {
+        width: 35%;
+      }
+    }
+  }
+}
+
+@include tablet_landscape() {
+  .address-list-container {
+    .filter-box {
+      .search-input {
+        width: 35%;
+      }
+
+      .create-btn {
+        margin-top: unset;
+      }
+    }
+  }
+
+  .add-address-form {
+    grid-template-columns: calc((100% - 20px) / 2) auto;
+    .address-input {
+      grid-column: 1 / span 2;
+    }
+  }
+}
+
+@include tablet_portrait() {
+  .address-list-container {
+    .filter-box {
+      .search-input {
+        width: 35%;
+      }
+
+      .period-filter {
+        .filter-label {
+          display: none;
+        }
+      }
+
+      .create-btn {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .add-address-form {
+    width: 70vw;
+  }
+}
+
+@include mobile_landscape() {
+  .address-list-container {
+    .filter-box {
+      .create-btn {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+@include mobile_portrait() {
+  .address-list-container {
+    .filter-box {
+      flex-direction: column;
+      .search-input {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      .create-btn {
+        width: calc(100vw - 20px);
+        margin-top: unset;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .dropdown-overlay {
+    width: 90vw;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+
+  .add-address-form {
+    grid-template-columns: auto;
+    .address-input {
+      grid-column: 1 / span 1;
+    }
+  }
+}

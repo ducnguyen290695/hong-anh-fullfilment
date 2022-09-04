@@ -1,0 +1,150 @@
+@import '/src/styles/mixins';
+
+.history-container {
+  .seller-code {
+    font-weight: 600;
+  }
+
+  .bill-code {
+    font-weight: 400;
+  }
+
+  .warehouse-select {
+    min-width: 120px;
+  }
+
+  .amount-increase {
+    color: #00ab78;
+  }
+
+  .amount-decrease {
+    color: #d2434d;
+  }
+
+  .filter-box {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    .search-input {
+      width: 50%;
+    }
+
+    .period-filter {
+      white-space: nowrap;
+      .filter {
+        margin-left: 5px;
+      }
+    }
+
+    .filter-btn {
+      width: 230px;
+      .filter-icon {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.dropdown-overlay {
+  width: 400px;
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+// ===============================Reponesive====================================
+@include laptop() {
+  .history-container {
+    .filter-box {
+      .search-input {
+        width: 35%;
+      }
+    }
+  }
+}
+
+@include tablet_landscape() {
+  .history-container {
+    .filter-box {
+      .search-input {
+        width: 35%;
+      }
+
+      .create-btn {
+        margin-top: unset;
+      }
+    }
+  }
+}
+
+@include tablet_portrait() {
+  .history-container {
+    .filter-box {
+      .search-input {
+        width: 35%;
+      }
+
+      .period-filter {
+        .filter-label {
+          display: none;
+        }
+      }
+
+      .create-btn {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+@include mobile_landscape() {
+  .history-container {
+    .filter-box {
+      .create-btn {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+@include mobile_portrait() {
+  .history-container {
+    .filter-box {
+      flex-direction: column;
+      .search-input {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      .period-filter {
+        white-space: nowrap;
+        .filter-label {
+          display: none;
+        }
+
+        .filter {
+          margin-left: 0px;
+          width: calc(100vw - 20px);
+          margin-bottom: 15px;
+        }
+      }
+
+      .filter-btn {
+        width: calc(100vw - 20px);
+        margin-bottom: 15px;
+      }
+
+      .create-btn {
+        width: calc(100vw - 20px);
+        margin-top: unset;
+      }
+    }
+  }
+
+  .dropdown-overlay {
+    width: 90vw;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+}

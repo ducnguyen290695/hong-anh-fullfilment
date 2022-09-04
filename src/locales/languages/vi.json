@@ -1,0 +1,615 @@
+{
+  "common": {
+    "all": "Tất cả",
+    "filter": "Bộ lọc",
+    "reset": "Thiết lập lại",
+    "apply": "Áp dụng",
+    "save": "Lưu lại",
+    "cancel": "Hủy bỏ",
+    "cancelMessage": "Bạn có muốn hủy?",
+    "setting": "Cài đặt",
+    "product": "Sản phẩm",
+    "seller": "Đại lý",
+    "accountant": "Kế toán",
+    "cart": "Giỏ hàng",
+    "role": "Vai trò",
+    "employee": "Nhân viên",
+    "department": "Phòng ban",
+    "lackOfStock": "Không đủ hàng",
+    "confirm": "Xác nhận",
+    "image": "Ảnh",
+    "pdf": "pdf",
+    "index": "STT",
+    "today": "Hôm nay",
+    "yesterday": "Hôm qua",
+    "thisWeek": "Tuần này",
+    "lastWeek": "Tuần trước",
+    "thisMonth": "Tháng này",
+    "lastMonth": "Tháng trước",
+    "option": "Tùy chọn",
+    "systemSetting": "Cài đặt hệ thống",
+    "close": "Đóng",
+    "full": "Đủ",
+    "lack": "Thiếu",
+    "outOfStock": "Hết hàng",
+    "yes": "Có",
+    "no": "Không",
+    "other": "Khác",
+    "day": "Ngày",
+    "help": "Trợ giúp",
+    "exportFile": "Xuất file"
+  },
+  "pageError": {
+    "403": "403",
+    "404": "404",
+    "403SubTittle": "Bạn không có quyền truy cập.",
+    "404SubTittle": "Trang bạn đang xem không tồn tại",
+    "goHomePage": "Về trang chủ"
+  },
+  "accountant": {
+    "transactionHistory": "Lịch sử giao dịch",
+    "level": "Cấp độ",
+    "warehouse": "Kho xuất hàng",
+    "status": "Trạng thái",
+    "active": "Đang hoạt động",
+    "inactive": "Ngừng hoạt động",
+    "cooperate": "Đang hợp tác",
+    "stopCooperate": "Ngưng hợp tác",
+    "walletType": {
+      "personal": "Ví cá nhân",
+      "company": "Ví công ty",
+      "virtual": "Ví tiền ảo",
+      "bank": "TK ngân hàng"
+    },
+    "transactionType": {
+      "companyToCompany": "Công ty - Công ty",
+      "personalToCompany": "Cá nhân - Công ty",
+      "companyToPersonal": "Công ty - Cá nhân",
+      "personalToPersonal": "Cá nhân - Cá nhân"
+    },
+    "selectTransferType": "Chọn loại chuyển khoản",
+    "transferType": "Loại giao dịch",
+    "sellerVirtualWallet": "Ví ảo đại lý"
+  },
+  "product": {
+    "placeholder": {
+      "currency": "Nhập số tiền",
+      "number": "Nhập số lượng",
+      "shortCode": "Nhập mã ngắn",
+      "searchFilter": "Tìm kiếm"
+    },
+    "validateMessage": {
+      "currency": "Vui lòng nhập số tiền",
+      "number": "Vui lòng nhập số lượng",
+      "shortCode": {
+        "blank": "Vui lòng nhập mã ngắn",
+        "overLimit": "Tối đa 12 ký tự",
+        "wrongFormat": "Sai định dạng mã ngắn"
+      },
+      "updateSuccess": "Cập nhật sản phẩm thành công !",
+      "updateError": "Cập nhật sản phẩm thất bại !"
+    },
+    "priceRadio": {
+      "haveNotPrice": "Chưa có giá",
+      "havePrice": "Đã có giá"
+    },
+    "inputRange": {
+      "from": "Từ"
+    },
+    "vatCheckbox": {
+      "yes": "Có",
+      "no": "Không"
+    },
+    "tableTitle": {
+      "numberOrder": "STT",
+      "code": "MÃ SẢN PHẨM",
+      "name": "TÊN SẢN PHẨM",
+      "producer": "NSX",
+      "shortCode": "MÃ NGẮN",
+      "priceLevel1": "GIÁ CẤP 1",
+      "price": "GIÁ",
+      "priceLevel2": "GIÁ CẤP 2",
+      "priceLevel3": "GIÁ CẤP 3",
+      "priceLevel4": "GIÁ CẤP 4",
+      "warranty": "BẢO HÀNH",
+      "inStock": "TỒN KHO",
+      "exportedVAT": "XUẤT VAT"
+    },
+    "manufactures": "NSX",
+    "priceLevel1": "Giá cấp 1",
+    "priceLevel2": "Giá cấp 2",
+    "priceLevel3": "Giá cấp 3",
+    "priceLevel4": "Giá cấp 4",
+    "realStock": "Tồn thực",
+    "exportVat": "Xuất Vat",
+    "edit": "Sửa sản phẩm",
+    "haveNotPrice": "Chưa có giá",
+    "havePrice": "Đã có giá"
+  },
+  "uploadDocument": {
+    "limitErrorMessage": "Tệp tin dung lượng vượt quá 5MB !",
+    "uploadFail": "Upload thất bại !"
+  },
+  "cart": {
+    "list": {
+      "tools": {
+        "replication": "Nhân bản",
+        "help": "Trợ giúp"
+      },
+      "infoSeller": {
+        "depot": "Kho xuất hàng"
+      },
+      "infoProduct": {
+        "title": "THÔNG TIN SẢN PHẨM",
+        "buttonAdd": "Thêm sản phẩm",
+        "totalOrder": {
+          "title": "Tổng tạm tính"
+        }
+      },
+      "infoOrder": {
+        "title": {
+          "infoSender": "THÔNG TIN NGƯỜI GỬI",
+          "infoRecieve": "THÔNG TIN NHẬN HÀNG"
+        }
+      },
+      "description": {
+        "title": "GHI CHÚ",
+        "form": {
+          "internalNotes": {
+            "label": "Ghi chú nội bộ ",
+            "placeholder": "Nhập ghi chú nội bộ"
+          },
+          "orderNotes": {
+            "label": "Ghi chú đơn hàng",
+            "placeholder": "Nhập ghi chú đơn hàng"
+          }
+        }
+      },
+      "deliveryMethods": {
+        "title": "PHƯƠNG THỨC GIAO HÀNG",
+        "methods": {
+          "bus": "Nhà xe",
+          "deliver3Party": "Chuyển phát",
+          "pickUpCount": "Tại kho",
+          "urbanCOD": "COD",
+          "urbanNotCOD": "Giao nội thành"
+        },
+        "infoMethod": {
+          "formBus": {
+            "nameGarage": {
+              "label": "Tên nhà xe",
+              "placeholder": "Nhập tên nhà xe"
+            },
+            "phoneNumber": {
+              "label": "Điện thoại",
+              "placeholder": "Nhập số điện thoại"
+            },
+            "parkedAt": {
+              "label": "Đỗ tại",
+              "placeholder": "Nhập vị trí đỗ"
+            },
+            "station": {
+              "label": "Bến xe",
+              "placeholder": "Nhập bến xe"
+            },
+            "feeShipping": {
+              "label": "Nhập phí vận chuyển",
+              "placeholder": "Nhập phí vận chuyển"
+            }
+          },
+          "formDeliver3Party": {
+            "weight": {
+              "label": "Khối lượng(g)",
+              "placeholder": "Nhập khối lượng"
+            },
+            "length": {
+              "label": "Chiều dài(cm)",
+              "placeholder": "Nhập chiều dài"
+            },
+            "width": {
+              "label": "Chiều rộng(cm)",
+              "placeholder": "Nhập chiều rộng"
+            },
+            "height": {
+              "label": "Chiều cao(cm)",
+              "placeholder": "Nhập chiều cao"
+            },
+            "shippingUnit": {
+              "label": "Chọn đơn vị vận chuyển và phương thức giao hàng tương ứng",
+              "placeholder": "Chọn đơn vị vận chuyển và phương thức giao hàng tương ứng",
+              "serviceFee": "Phí vận chuyển",
+              "editFeeShipping": "Tùy chỉnh phí vận chuyển"
+            }
+          },
+          "formUrbanCOD": {
+            "feeShipping": {
+              "label": "Nhập phí vận chuyển",
+              "placeholder": "Nhập phí vận chuyển"
+            }
+          },
+          "formUrbanNotCOD": {
+            "feeShipping": {
+              "label": "Nhập phí vận chuyển",
+              "placeholder": "Nhập phí vận chuyển"
+            }
+          }
+        },
+        "priorityLevel": {
+          "title": "Mức độ ưu tiên xử lý",
+          "high": "Cao",
+          "medium": "Bình thường",
+          "low": "Thấp"
+        },
+        "deliveryDeadline": {
+          "title": "Hạn chót giao hàng",
+          "tooltip": {
+            "title": "Tắt tùy chọn này tức là tiếp tục chở đủ hàng"
+          },
+          "form": {
+            "hour": {
+              "placeholder": "Nhập giờ"
+            },
+            "day": {
+              "placeholder": "Nhập ngày(DD/MM/YY)"
+            }
+          }
+        },
+        "switch": {
+          "label": "Cho phép đi đơn khi chưa đủ hàng"
+        },
+        "inputRequired": {
+          "busName": "Vui lòng nhập tên nhà xe !",
+          "busPhone": "Vui lòng nhập số điện thoại !"
+        }
+      },
+      "vatBill": {
+        "vat": {
+          "title": "XUẤT HÓA ĐƠN VAT",
+          "exportVat": {
+            "form": {
+              "exportVat": {
+                "label": "Xuất VAT"
+              },
+              "exportVatAll": {
+                "label": "Xuất VAT toàn bộ đơn hàng"
+              }
+            }
+          },
+          "descriptionVat": {
+            "form": {
+              "taxCode": {
+                "label": "Mã số thuế",
+                "placeholder": "Nhập mã số thuế"
+              },
+              "nameCompany": {
+                "label": "Tên công ty",
+                "placeholder": "Nhập tên công ty"
+              },
+              "email": {
+                "label": "Địa chỉ email",
+                "placeholder": "Nhập địa chỉ email"
+              },
+              "address": {
+                "label": "Địa chỉ trên hóa đơn",
+                "placeholder": "Nhập địa chỉ trên hóa đơn"
+              }
+            }
+          }
+        },
+        "bill": {
+          "title": "HÓA ĐƠN",
+          "field": {
+            "totalAmount": "Tổng tiền hàng",
+            "transportFee": "Phí vận chuyển",
+            "serviceCharge": "Phí dịch vụ",
+            "discount": "Giảm giá đơn hàng",
+            "paymentByCash": "Thanh toán bằng Tiền mặt/chuyển khoản",
+            "paymentByDebit": "Thanh toán bằng công nợ",
+            "totalPayment": "Tổng phải thanh toán"
+          }
+        }
+      },
+      "settingOther": {
+        "title": "CÀI ĐẶT KHÁC"
+      },
+      "paymentMethods": {
+        "title": "HÌNH THỨC THANH TOÁN",
+        "cash": "Tiền mặt/Chuyển khoản",
+        "cashAlert": "Số dư trong ví ảo không đủ để thanh toán đơn hàng",
+        "cashAndDebit": "Tiền mặt/Chuyển khoản + Công nợ",
+        "cashAndDebitAlert": "Hạn mức khả dụng không đủ để thanh toán đơn hàng",
+        "COD": "COD",
+        "debit": "Công nợ",
+        "debitAlert": "Số dư ví ảo đại lý > 0, vui lòng thanh toán hết số dư trong ví ảo trước khi thanh toán bằng công nợ"
+      },
+      "productTable": {
+        "title": "Thêm sản phẩm vào giỏ hàng",
+        "addProductSuccess": "Cập nhật giỏ hàng thành công !",
+        "addProductFail": "Cập nhật giỏ hàng thất bại !"
+      },
+      "selectionFilter": {
+        "selected": "Đã chọn",
+        "selectedAll": "Tất cả"
+      }
+    },
+    "create": {
+      "addSuccess": "Thêm giỏ hàng thành công",
+      "addError": "Thêm giỏ hàng thất bại",
+      "selectSeller": "Chọn Đại lý",
+      "createNewCart": "Tạo mới giỏ hàng",
+      "sellerPlaceholder": "Nhập Mã đại lý hoặc Tên đại lý hoặc Số điện thoại để tìm kiếm",
+      "sellerValidate": "Vui lòng chọn Đại lý trước khi tạo Giỏ hàng",
+      "tooltipTitle": "Chọn đại lý",
+      "addToCart": "Thêm vào giỏ",
+      "addToCartWarning": "Vui lòng chọn sản phẩm trước khi thêm vào giỏ"
+    },
+    "changeAddress": {
+      "title": "Sổ địa chỉ",
+      "default": "Mặc đinh"
+    },
+    "productTitle": {
+      "numberOrder": "STT",
+      "code": "MÃ SẢN PHẨM",
+      "name": "THÔNG SỐ",
+      "units": "ĐƠN VỊ",
+      "warranty": "BẢO HÀNH",
+      "exportedVAT": "XUẤT VAT",
+      "debtByDay": "ĐƯỢC NỢ (NGÀY)",
+      "inStock": "TỒN KHO",
+      "quantity": "SỐ LƯỢNG",
+      "unitPrice": "ĐƠN GIÁ",
+      "total": "THÀNH TIỀN"
+    },
+    "validateMessage": {
+      "busName": "Vui lòng nhập tên nhà xe !",
+      "busPhoneNumber": "Vui lòng nhập số điện thoại nhà xe !",
+      "busFee": "Vui lòng nhập phí vận chuyển nhà xe !",
+      "deliveryWeight": "Vui lòng nhập khối lượng!",
+      "deliveryLength": "Vui lòng nhập chiều dài!",
+      "deliveryWidth": "Vui lòng nhập chiều rộng!",
+      "deliveryHeight": "Vui lòng nhập chiều cao!",
+      "deliveryShippingUnit": "Vui lòng nhập khối lượng và kích thước trước khi chọn phương thức giao hàng",
+      "urbanCODFee": "Vui lòng nhập phí vận chuyển giao nội thành !",
+      "overBalance": "Tổng số dư trong Ví cá nhân và Vì công ty của đại lý không đủ để thanh toán đơn hàng, vui lòng nạp thêm tiền vào Ví của Đại lý để có thể tạo đơn hàng và thanh toán",
+      "notHasProduct": "Giỏ hàng phải có ít nhất 1 sản phẩm",
+      "outOfStock": "Trong Giỏ hàng có sản phẩm không còn đủ số lượng tồn kho, bạn có muốn tạo đơn hàng với sản phẩm không đủ tồn kho không?",
+      "notSupportShippingProvider": "Không hỗ trợ vận chuyển"
+    },
+    "deleteCartNotify": "Toàn bộ thông tin của Giỏ hàng sẽ bị mất và không thể khôi phục lại. Bạn chắc chắn muốn xóa Giỏ hàng này không?",
+    "updateShippingContactError": "Cập nhật địa chỉ giao hàng lỗi",
+    "changeVatCartItemsSuccess": "Thay đổi VAT của sản phẩm trong giỏ thành công !",
+    "changeVatCartItemsError": "Thay đổi VAT của sản phẩm trong giỏ trong giỏ thất bại !",
+    "changeQuantityCartItemsSuccess": "Thay đổi số lượng của sản phẩm trong giỏ thành công !",
+    "changeQuantityCartItemsError": "Thay đổi số lượng của sản phẩm trong giỏ thất bại !",
+    "removedItemInCart": "Xóa sản phẩm ra khỏi giỏ hàng",
+    "removedItemInCartSuccess": "Xóa sản phẩm trong giỏ thành công !",
+    "removedItemInCartError": "Xóa sản phẩm trong giỏ thất bại !",
+    "changeSellerSuccess": "Thay đổi đại lý thành công",
+    "changeSellerError": "Thay đổi đại lý thất bại",
+    "changeExportedWarehouse": "Thay đổi kho xuất hàng lỗi",
+    "changePaymentMethod": "Thay đổi phương thức thanh toán lỗi",
+    "wallet": "Số dư ví ảo",
+    "debtLimit": "Hạn mức công nợ",
+    "errorWallet": "Số dư trong ví ảo không đủ để thanh toán đơn hàng",
+    "changeMaxDayOfDebtSuccess": "Thay đổi ngày nợ thành công",
+    "changeMaxDayOfDebtError": "Thay đổi ngày nợ thất bại",
+    "createOrderValidateModalTitle": "Chú ý tạo đơn hàng",
+    "createOrderValidateConfirmation": "Bạn có chắc chắn muốn tạo đơn hàng không?",
+    "createOrder": "Tạo đơn hàng",
+    "cloneCartSuccess": "Nhân bản giỏ hàng thành công!",
+    "cloneCartError": "Nhân bản giỏ hàng thất bại!",
+    "cloneCartValidate": "Bạn chỉ được thêm tối đa 5 Giỏ hàng, vui lòng hoàn thành các Giỏ hàng đang có sẵn trước khi thêm Giỏ hàng mới",
+    "cloneCartConfirmationMessage": "Bạn có muốn nhân bản giỏ hàng này không?",
+    "createOrderSuccess": "Tạo mới đơn hàng thành công!",
+    "createOrderError": "Tạo mới đơn hàng thất bại!",
+    "removeCartError": "Xóa giỏ hàng thất bại!",
+    "exportCartError": "Xuất giỏ hàng thất bại!"
+  },
+  "order": {
+    "orderList": {
+      "low": "Thấp",
+      "medium": "Bình thường",
+      "high": "Cao",
+      "bus": "Nhà xe",
+      "deliver3Party": "Chuyển phát",
+      "pickUpCounter": "Tại kho",
+      "urbanCOD": "Giao nội thành",
+      "cash": "Tiền mặt - CK",
+      "cashAndDebit": "Tiền mặt - CK + Công nợ",
+      "COD": "COD",
+      "debt": "Công nợ",
+      "pageTitle": "Danh sách đơn hàng",
+      "placeholderInputSearch": "Tìm kiếm nhanh theo mã đơn, tên khách hàng, ghi chú",
+      "filterButton": "Bộ lọc theo thời gian tạo đơn",
+      "index": "STT",
+      "createdAt": "NGÀY TẠO",
+      "orderCode": "MÃ ĐƠN",
+      "totalOrder": "GIÁ TRỊ ĐƠN",
+      "exportWarehouse": "KHO XUẤT",
+      "receiverName": "KHÁCH HÀNG",
+      "orderPriority": "ĐỘ ƯU TIÊN",
+      "shippingType": "PHƯƠNG THỨC GIAO",
+      "paymentMethod": "PHƯƠNG THỨC THANH TOÁN",
+      "status": "TRẠNG THÁI",
+      "createdBy": "NGƯỜI TẠO",
+      "inStockStatus": "TÌNH TRẠNG TỒN",
+      "fullStockRequired": "GIAO KHI CHƯA ĐỦ HÀNG",
+      "exportVAT": "XUẤT VAT",
+      "remainingDeliverTime": "THỜI GIAN CÒN LẠI",
+      "receiverContactAddress": "ĐỊA CHỈ NGƯỜI NHẬN",
+      "promisedDeliverTime": "HẠN CHÓT ĐI ĐƠN",
+      "shippingUnit": "ĐƠN VỊ VẬN CHUYỂN",
+      "internalNote": "GHI CHÚ NỘI BỘ",
+      "image": "ẢNH",
+      "successfulDeliveryDate": "NGÀY GIAO HÀNG THÀNH CÔNG",
+      "shipperTelephone": "SỐ ĐIỆN THOẠI ĐVVC",
+      "senderAddress": "ĐỊA ĐIỂM GIAO HÀNG",
+      "noteShipping": "GHI CHÚ ĐANG GIAO",
+      "receiverPhone": "SỐ ĐIỆN THOẠI KHÁCH HÀNG",
+      "linkShippingSuccess": "Giao thành công",
+      "note": "GHI CHÚ ĐƠN HÀNG",
+      "dateCreated": "Ngày tạo đơn",
+      "cancelOrder": "Huỷ đơn",
+      "waitingForEnoughStock": "Chờ đủ tồn",
+      "approvedEnoughStock": "Duyệt đủ tồn",
+      "selectOrderValidate": "Vui lòng chọn đơn hàng",
+      "confirmShipping": "Giao cho shipper",
+      "exportingSuccess": "Xác nhận xuất kho thành công",
+      "receiverContactPhone": "SỐ ĐIỆN THOẠI KHÁCH HÀNG",
+      "completedAt": "NGÀY GIAO HÀNG THÀNH CÔNG",
+      "enoughProductsWarning": "Trong đơn hàng bạn chọn có đơn hàng đã đủ tồn kho, vui lòng kiểm tra lại!",
+      "approvedEnoughStockSuccess": "Duyệt tồn kho cho đơn hàng thành công",
+      "approvedEnoughStockError": "Duyệt tồn kho cho đơn hàng thất bại",
+      "waitingForStockSuccess": "Chuyển trạng thái chờ tồn kho cho đơn hàng thành công",
+      "waitingForStockError": "Chuyển trạng thái chờ tồn kho cho đơn hàng thất bại",
+      "denyStockSuccess": "Chuyển trạng thái đơn hàng thành công",
+      "denyStockError": "Chuyển trạng thái đơn hàng thất bại",
+      "confirmStockSuccess": "Xác nhận đủ tồn kho cho đơn hàng thành công",
+      "confirmStockError": "Xác nhận đủ tồn kho cho đơn hàng thất bại"
+    },
+    "orderTag": {
+      "exportWarehouse": "Kho xuất",
+      "priorities": "Độ ưu tiến",
+      "shippingTypes": "Phương thức giao hàng",
+      "paymentMethods": "Phương thức thanh toán",
+      "statuses": "Trạng thái",
+      "fullStockRequired": "Giao khi chưa đủ hàng",
+      "vat": "Xuất VAT",
+      "createdBy": "Người tạo",
+      "stockStatus": "Tình trạng tồn",
+      "timeRange": "Thời gian",
+      "from": "Từ",
+      "to": "đến"
+    },
+    "orderDetail": {
+      "provisionalTotal": "Tổng tạm tính",
+      "productCode": "MÃ SẢN PHẨM",
+      "parameter": "THÔNG SỐ",
+      "unit": "ĐƠN VỊ",
+      "warranty": "BẢO HÀNH (THÁNG)",
+      "vatExport": "XUẤT VAT",
+      "inDebt": "ĐƯỢC NỢ (NGÀY)",
+      "inventory": "TỒN KHO",
+      "quantity": "SỐ LƯỢNG",
+      "unitPrice": "ĐƠN GIÁ",
+      "intoMoney": "THÀNH TIỀN",
+      "orderCode": "Mã đơn hàng",
+      "orderStatus": "Trạng thái",
+      "cancelBtn": "Hủy đơn",
+      "editBtn": "Chỉnh sửa",
+      "approveBtn": "Duyệt tồn",
+      "productInfo": "THÔNG TIN SẢN PHẨM",
+      "senderInfo": "THÔNG TIN NGƯỜI GỬI",
+      "note": "GHI CHÚ",
+      "internalNote": "Ghi chú nội bộ",
+      "orderNote": "Ghi chú đơn hàng",
+      "receiverInfo": "THÔNG TIN NGƯỜI NHẬN",
+      "anotherSetting": "CÀI ĐẶT KHÁC",
+      "processingPriority": "Mức độ ưu tiên xử lý",
+      "deliveryDeadline": "Hạn chót giao hàng",
+      "allowToOrder": "Cho phép đi đơn khi chưa đủ hàng",
+      "shippingMethod": "PHƯƠNG THỨC GIAO HÀNG",
+      "shippingBy": "Giao hàng bởi",
+      "busName": "Tên nhà xe",
+      "busPhone": "Điện thoại",
+      "parkedAt": "Đỗ tại",
+      "busStation": "Bến xe",
+      "paymentMethod": "HÌNH THỨC THANH THOÁN",
+      "paymentByVirtualWallet": "Thanh toán qua ví ảo",
+      "virtualWalletBalance": "Số dư ví ảo",
+      "paymentByDebt": "Thanh toán qua công nợ",
+      "debtLimit": "Hạn mức công nợ",
+      "availabilityLimit": "Hạn mức khả dụng",
+      "availabilityLimitIsNotEnough": "Hạn mức khả dụng không đủ",
+      "exportVatBill": "XUẤT HOÁ ĐƠN VAT",
+      "exportVat": "Xuất VAT",
+      "exportVatForAllOrders": "Xuất VAT toàn bộ đơn hàng",
+      "taxCode": "Mã số thuế",
+      "companyName": "Tên công ty",
+      "companyEmail": "Email",
+      "billAddress": "Địa chỉ trên hoá đơn",
+      "bill": "HOÁ ĐƠN",
+      "totalAmount": "Tổng tiền hàng",
+      "shippingFee": "Phí vận chuyển",
+      "serviceFee": "Phí dịch vụ",
+      "saleOff": "Giảm giá đơn hàng",
+      "totalPayment": "Tổng phải thanh toán",
+      "paymentBy": "Thanh toán bằng Tiền mặt/chuyển khoản",
+      "unableToImport": "Không nhập được tồn",
+      "sufficientConfirmation": "Xác nhận đủ tồn",
+      "waitingForEnoughStock": "Chờ đủ tồn",
+      "approvedPayment": "Duyệt thanh toán",
+      "recreateCart": "Tạo lại giỏ hàng",
+      "HongAnhDelivery": "Giao cho shipper",
+      "unitDelivery": "Chuyển đơn ĐVVC",
+      "successfulDelivery": "Giao hàng thành công",
+      "exportConfirmation": "Xác nhận xuất kho",
+      "paymentApprovalSuccess": "Duyệt thanh toán thành công",
+      "paymentApprovalError": "Duyệt thanh toán thất bại",
+      "imageShipping": "ẢNH GIAO HÀNG",
+      "printOrder": "In đơn",
+      "exportOrderError": "Xuất đơn hàng thất bại!",
+      "providerName": "ĐVVC"
+    },
+    "orderStatus": {
+      "waitingForApproval": "Chờ duyệt tồn",
+      "waitingForEnoughStock": "Chờ đủ tồn",
+      "waitingForPayment": "Chờ thanh toán",
+      "waitingForExporting": "Chờ xuất kho",
+      "waitingForDelivery": "Chờ giao hàng",
+      "delivering": "Đang giao",
+      "completed": "Hoàn thành",
+      "cancel": "Đã huỷ",
+      "orderStatus": "Trạng thái đơn hàng"
+    },
+    "cancelOrder": {
+      "tittle": "HỦY ĐƠN",
+      "warningMessage": "Vui lòng chọn lý do trước khi hủy đơn",
+      "lackOfStock": "Không đủ tồn",
+      "outOfDebt": "Không đủ hạn mức công nợ",
+      "otherPlaceholder": "Nhập lý do",
+      "otherFieldCannotEmpty": "Không được để trống trường này",
+      "cancelOrderSuccess": "Hủy đơn hàng thành công"
+    },
+    "deliverySuccess": {
+      "tittle": "Vui lòng đính kèm ảnh vào đơn hàng để hệ thống ghi nhận đã giao thành công!",
+      "supportedFiles": "File hỗ trợ: *.png, *.jpeg, *.jpg - tối đa 5Mb",
+      "successfulDelivery": "Xác nhận giao hàng thành công",
+      "errorDelivery": "Xác nhận giao hàng thất bại"
+    },
+    "selectingShipper": {
+      "tittle": "Chọn shipper",
+      "shipperLabel": "Shipper",
+      "shipperPlaceholder": "Tìm kiếm theo mã nhân viên, số điện thoại, tên",
+      "shipperValidateMessage": "Vui lòng chọn shipper",
+      "receivableLabel": "Tiền phải thu",
+      "confirmDeliverSuccess": "Giao đơn cho shipper thành công!",
+      "confirmDeliverError": "Giao đơn cho shipper thất bại!"
+    },
+    "changeOrderStatusWarning": {
+      "approvalStockList": "Trong đơn hàng bạn chọn có đơn hàng không đủ tồn kho, vui lòng kiểm tra lại!",
+      "approvalStockDetail": "Trong đơn hàng của bạn có sản phẩm không đủ tồn kho, bạn chắc chắn muốn duyệt tồn?",
+      "waitingStockList": "Trong đơn hàng bạn chọn có đơn hàng đã đủ tồn kho, vui lòng kiểm tra lại!",
+      "waitingStockDetail": "Trong đơn hàng có tất cả sản phẩm đã đủ tồn kho, vui lòng kiểm tra lại!",
+      "denyStockList": "Trong đơn hàng bạn chọn có đơn hàng đủ tồn kho, vui lòng kiểm tra lại!",
+      "denyStockDetail": "Đơn hàng đủ tồn kho, vui lòng kiểm tra lại!",
+      "confirmStockList": "Trong đơn hàng bạn chọn có đơn hàng chưa đủ tồn kho, vui lòng kiểm tra lại!",
+      "confirmStockDetail": "Trong đơn hàng có sản phẩm chưa đủ tồn kho, vui lòng kiểm tra lại!"
+    }
+  },
+  "seller": {
+    "selectSaleCategoriesWarning": "Vui lòng chọn danh mục được bán!",
+    "createSellerSuccess": "Tạo đại lý thành công !",
+    "createSellerFail": "Tạo đại lý thất bại !",
+    "updateSellerSuccess": "Cập nhật đại lý thành công !",
+    "updateSellerFail": "Cập nhật đại lý thất bại !",
+    "seller": "Đại lý",
+    "addSeller": "Thêm mới đại lý",
+    "sellerManage": "Quản lý tài khoản đại lý",
+    "updateSeller": "Cập nhật đại lý",
+    "createSeller": "Thêm mới đại lý",
+    "commonInfo": "Thông tin chung",
+    "saleCategories": "Danh mục được bán",
+    "addressList": "Sổ địa chỉ"
+  }
+}
